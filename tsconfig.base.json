@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "bundler",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "types": ["node"],
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["packages/ui/src/*"],
+      "@config": ["packages/config/src/index.ts"]
+    }
+  }
+}

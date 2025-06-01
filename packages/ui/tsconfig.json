@@ -1,0 +1,14 @@
+{
+  // Re-use all the strictness & path aliases from the repo root
+  "extends": "../../tsconfig.base.json",
+
+  "compilerOptions": {
+    // Emit declaration files into dist/
+    "outDir": "dist",
+    "rootDir": "./",
+    "composite": true,
+    "declaration": true
+  },
+
+  "include": ["src/**/*", "index.ts"]
+}

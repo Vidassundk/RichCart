@@ -1,0 +1,33 @@
+cat > .gitignore <<'IGN'
+# ── build & cache ────────────────────────────────────────────
+dist/
+.next/
+.turbo/
+out/
+*.tsbuildinfo
+
+# ── package managers ─────────────────────────────────────────
+node_modules/
+.pnpm-store/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# ── logs & misc ──────────────────────────────────────────────
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+*.log
+*.log.*
+.cache/
+.eslintcache
+.husky/_
+
+# ── environment / secrets ───────────────────────────────────
+.env*
+!.env.example
+
+# ── VS Code / IDEs ───────
